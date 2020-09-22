@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
-import { auth } from "./firebase";
+import { auth } from "../../firebase";
 import "./Login.css";
 
 function Login() {
@@ -73,6 +73,7 @@ function Login() {
         <button onClick={register} className="login__registerButton">
           Create your new Account
         </button>
+        <p>If you are new here Just Enter your Email-Id and any Password and click the above button.</p>
       </div>
     </div>
   );

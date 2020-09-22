@@ -1,9 +1,10 @@
 import { ShoppingBasket } from "@material-ui/icons";
 import React from "react";
 import "./Checkout.css";
-import CheckoutProduct from "./CheckoutProduct";
-import { useStateValue } from "./StateProvider";
-import Subtotal from "./Subtotal";
+import CheckoutProduct from "../checkout_product/CheckoutProduct";
+import { useStateValue } from "../../StateProvider";
+import Subtotal from "../subtotal/Subtotal";
+
 
 function Checkout() {
   const [{ basket, user }, dispatch] = useStateValue();

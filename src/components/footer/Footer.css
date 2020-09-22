@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  background: url(https://clickup.com/landing/images/v2/dots.svg) repeat
+      center/auto,
+    linear-gradient(
+      90deg,
+      rgba(131, 58, 180, 1) 20%,
+      rgba(253, 29, 29, 0.8) 50%,
+      rgba(252, 176, 69, 1) 80%
+    );
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Merienda One', cursive;  
+}
+
+a {
+  /* color: lightblue; */
+}
