@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Home.css";
 // import Product from "./Product";
-import axios from "axios";
 import data from "../../data";
 import Product from "../product/Product";
 
@@ -85,7 +84,7 @@ function Home(props) {
             console.log("ok");
             return (
               <Product
-                key={product._id}
+                id={product._id}
                 title={product.name}
                 price={product.price}
                 image={product.image}

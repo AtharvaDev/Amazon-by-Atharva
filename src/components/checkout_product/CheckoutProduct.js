@@ -11,7 +11,7 @@ function CheckoutProduct({ id, image, title, price, rating }) {
   const removeFromBasket = () => {
     dispatch({
       type: "REMOVE_FROM_BASKET",
-      payload: id,
+      id: id,
     });
   };
 
@@ -52,3 +52,5 @@ function CheckoutProduct({ id, image, title, price, rating }) {
 }
 
 export default CheckoutProduct;
+
+

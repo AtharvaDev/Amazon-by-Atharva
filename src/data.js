@@ -55,7 +55,7 @@ export default {
       name:
         "Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440",
       image:
-        "https://cdn.shopify.com/s/files/1/0214/1369/1456/products/New_Project_35_7d6fd2f8-815d-4c1f-8074-a6d866544309_540x.jpg ",
+        "https://images-na.ssl-images-amazon.com/images/I/71IjK1dq-OL._SL1280_.jpg ",
       price: 80000.0,
       rating: 2.5,
     },
