@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./Home.css";
 // import Product from "./Product";
 import data from "../../data";
 import Product from "../product/Product";
 
 function Home(props) {
-  const [products, setProduct] = useState([]);
+  // const [products, setProduct] = useState([]);
 
   // useEffect(() => {
   //   const fetchData = async () => {
@@ -81,7 +81,7 @@ function Home(props) {
         /> */}
         <div className="home__row">
           {data.products.map((product) => {
-            console.log("ok");
+            // console.log("ok");
             return (
               <Product
                 id={product._id}

@@ -1,6 +1,5 @@
 import React from "react";
 import "./Header.css";
-import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import SearchIcon from "@material-ui/icons/Search";
 import { Link } from "react-router-dom";
 import { useStateValue } from "../../StateProvider";
@@ -8,7 +7,7 @@ import { auth } from "../../firebase";
 // try
 import Badge from "@material-ui/core/Badge";
 import { withStyles } from "@material-ui/core/styles";
-import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import MenuIcon from "@material-ui/icons/Menu";
 import ShoppingCartOutlinedIcon from "@material-ui/icons/ShoppingCartOutlined";
 // ends
 
@@ -31,6 +30,8 @@ function Header() {
 
   return (
     <div className="header">
+      <MenuIcon className="hamburger__menu" />
+
       <Link to="/">
         <img
           className="header__logo"
@@ -49,11 +50,17 @@ function Header() {
       </div>
 
       <div className="header__nav">
+        <img
+          className="header__flag"
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/1350px-Flag_of_India.svg.png"
+          alt="India_flag"
+        />
+
         <Link to={!user && "/login"}>
           <div onClick={handleAuthentication} className="header__option">
             <span className="header__optionLineOne">
               {/* {console.log(user.email)} */}
-              {user ? user.email : "Hello Guest"}
+              {user ? `Hello, ${user.email}` : "Hello, Guest"}
             </span>
             <span className="header__optionLineTwo">
               {user ? "Sign Out" : "Sign In"}
@@ -82,7 +89,7 @@ function Header() {
           {/* try */}
           <div className="header__optionBasket">
             <StyledBadge badgeContent={basket?.length} color="secondary">
-              <ShoppingCartOutlinedIcon  />
+              <ShoppingCartOutlinedIcon />
             </StyledBadge>
           </div>
           {/* try ends */}
